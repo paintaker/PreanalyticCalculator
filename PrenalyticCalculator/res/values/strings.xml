@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Преаналитика</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="place_caption">Город:</string>
+    <string name="place_selector">[Нажмите для выбора]</string>
+    <string name="item_shadow_text">Код исследования</string>
+    <string name="add_item_text">ДОБАВИТЬ ИССЛЕДОВАНИЕ</string>
+</resources>

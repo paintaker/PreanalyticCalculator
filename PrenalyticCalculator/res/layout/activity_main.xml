@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:src="@drawable/logo_prt1" />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_prt2" />
+        <Button
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/place_button_height"
+	        android:layout_weight="1"
+            android:layout_marginTop="@dimen/place_font_size"
+	        android:onClick="onSelectPlace"
+	        android:id="@+id/placeName"
+            android:text="@string/place_caption"
+            android:background="@drawable/gradient_box"
+            android:textSize="@dimen/place_font_size" />
+	</LinearLayout>
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pls"
+            android:text="@string/add_item_text"
+            android:background="@drawable/gradient_box"
+            android:onClick="addOrderItems" android:singleLine="true"/>
+	<FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/order_items_placeholder" >
+	</FrameLayout>
+	<FrameLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/variants_placeholder" >
+	</FrameLayout>
+</LinearLayout>
